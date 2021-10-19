@@ -1,4 +1,5 @@
 <!--Esperanza Rodríguez Martínez-->
+<!--PÁGINA PRINCIPAL PARA ADMINISTRAR CRUD-->
 <html>
 	<head>
 		<title>Administrar crud</title>
@@ -13,9 +14,9 @@
 					
 					require 'Constantes.php';	//Incluimos Constantes.php donde tendrémos definidos los valores para la conexión
 				
-					$conexion  = new mysqli(SERVER,USUARIO,CONTRASENA,NOMBREBD);
+					$conexion  = new mysqli(SERVER,USUARIO,CONTRASENA,NOMBREBD);	//Conectamos con la bd
 			
-					$consulta = "SELECT * FROM Empleados";						
+					$consulta = "SELECT * FROM Empleados";	//Consulta a ejecutar		
 				
 					$resultado = mysqli_query($conexion, $consulta);				
 					
@@ -23,9 +24,8 @@
 						echo '<tr>';
 							echo '<td>'.$fila["Nombre"].'</td>';
 							echo '<td>'.$fila["DNI"].'</td>';
-							echo '<td><a href="datosCrud.php?id='.$fila["IdEmpleados"].'&op=borrar">Borrar</a></td>';
-							echo '<td><a href="datosCrud.php?id='.$fila["IdEmpleados"].'&op=modificar">Modificar</a></td>';
-							echo '<td><a href="datosCrud.php?id='.$fila["IdEmpleados"].'&op=consultar">Consultar</a></td>';
+							echo '<td><a href="datosCrud.php?id='.$fila["IdEmpleados"].'&op=borrar&sw=1">Borrar</a></td>'; //Enlace de borrado
+							echo '<td><a href="datosCrud.php?id='.$fila["IdEmpleados"].'&op=consultar">Consultar</a></td>';	//Enlace para consultar empleado
 						echo '</tr>';
 					};
 					
@@ -50,7 +50,7 @@
 					<th>DNI</th>
 				</tr>
 				<?php 
-					mostrar();
+					mostrar();	//Llamamos a la función anteriormente definida
 				?>
 			</table>
 		</main>

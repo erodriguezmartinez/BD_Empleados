@@ -9,6 +9,4 @@
 	define ("CONTRASENA","");
 	define ("NOMBREBD","bdempleados");
 
-
-	
 ?>
