@@ -1,0 +1,28 @@
+/*Esperanza Rodríguez Martínez*/
+
+table
+{
+	Border-collapse:collapse;
+	border-spacing:2px;
+	background-color:#9AEC8E;
+	margin-left:70px;
+	width:90%;
+	text-align:center;
+}
+td,tr,th,table
+{
+	border:3px solid #ffffff;
+}
+input
+{	
+	padding:5px;
+	width: 15%;
+	outline: none;
+	border-radius: 50px ;
+	border: 2px solid #56E841;
+	float:right;
+}
+td,tr,th
+{
+	padding:10px;
+}
