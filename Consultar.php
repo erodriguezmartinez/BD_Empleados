@@ -10,13 +10,11 @@
 	<body>
 		<!--TÍTULO-->
 		<header>Administrar</header>
-		<hr />
 		<!--MENÚ DE NAVEGACIÓN-->
 		<nav>
 			<a href="Administrar.php">Listado</a>
 			<a href="Anadir.html">Añadir</a>
 		</nav>
-		<hr />
 		<!--CUERPO DE LA PÁGINA-->
 			<?php 
 				
@@ -49,6 +47,9 @@
 						//Enlace por si se desea modificar el empleado mostrado
 						echo '<td><a href="datosCrud.php?id='.$fila["IdEmpleados"].'&op=modificar">Modificar</a></td>';
 					echo"</main>";
+					echo"<footer>";
+						echo"Panel de Administración";
+					echo"</footer>";
 					
 				}
 			?>	

@@ -34,13 +34,11 @@
 			?>
 		<!--TÍTULO-->
 		<header>Administrar</header>
-		<hr />
 		<!--MENÚ DE NAVEGACIÓN-->
 		<nav>
 			<a href="Administrar.php">Listado</a>
 			<a href="Anadir.html">Añadir</a>
 		</nav>
-		<hr />
 		<!--CUERPO DE LA PÁGINA-->
 		<main>	
 			<!--TABLA-->
@@ -54,5 +52,8 @@
 				?>
 			</table>
 		</main>
+		<footer>
+			Panel de Administración
+		</footer>
 	</body>
 </html>

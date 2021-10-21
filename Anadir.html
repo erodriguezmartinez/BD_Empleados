@@ -10,34 +10,33 @@
 	<body>
 		<!--TÍTULO-->
 		<header>Administrar</header>
-		<hr />
 		<!--MENÚ DE NAVEGACIÓN-->
 		<nav>
 			<a href="Administrar.php">Listado</a>
 			<a href="Anadir.html">Añadir</a>
 		</nav>
-		<hr />
 		<!--CUERPO DE LA PÁGINA-->
 		<main>	
 			<form action="datosComprobar.php" method="post">	<!--Manda los datos a datosComprobar para validarlos-->
 				<!--DATOS PERSONALES-->
-				<fieldset>
-					<label>Nombre completo y apellidos:</label><br />
-					<input type="text" name="nombre_completo" placeholder="Nombre" maxlength="30" /> 
-					<br /><br />
-					<label>DNI:</label><br />
-					<input type="text" name="DNI" placeholder="DNI" maxlength="9" /> 
-					<br /><br />
-					<label>Correo:</label><br />
-					<input type="email" name="correo" placeholder="ejemplo@gmail.com" /> 
-					<br /><br />
-					<label>Teléfono:</label><br />
-					<input type="text" name="telefono" maxlength="9" >
-				</fieldset>
+				<label>Nombre completo y apellidos:</label><br /><br />
+				<input type="text" name="nombre_completo" placeholder="Nombre" maxlength="30" /> 
+				<br /><br />
+				<label>DNI:</label><br /><br />
+				<input type="text" name="DNI" placeholder="DNI" maxlength="9" /> 
+				<br /><br />
+				<label>Correo:</label><br /><br />
+				<input type="email" name="correo" placeholder="ejemplo@gmail.com" /> 
+				<br /><br />
+				<label>Teléfono:</label><br /><br />
+				<input type="text" name="telefono" maxlength="9" >
 				<div id="centrar">
 					<input type="submit" name="enviar" id="solicitar" value="Añadir"> <!--Value Añadir para añadir empleado (validación en datosComprobar)-->
 				</div>
 			</form>
 		</main>
+		<footer>
+			Panel de Administración
+		</footer>
 	</body>
 </html>

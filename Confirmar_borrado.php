@@ -10,13 +10,11 @@
 	<body>
 		<!--TÍTULO-->
 		<header>Administrar</header>
-		<hr />
 		<!--MENÚ DE NAVEGACIÓN-->
 		<nav>
 			<a href="Administrar.php">Listado</a>
 			<a href="Anadir.html">Añadir</a>
 		</nav>
-		<hr />
 		<!--CUERPO DE LA PÁGINA-->
 			<?php 
 				
@@ -33,7 +31,7 @@
 					
 					//Mostramos la información del empleado
 					echo"<main>";
-						echo"<h2>¿Desea borrar al siguente empleado?</h2>";
+						echo"<h2>¿Desea borrar al siguente empleado?</h2><br />";
 						echo"<h3>Id Empleado</h3>";
 						echo "<p>".$fila["IdEmpleados"]."</p><br />";
 						echo"<h3>Nombre</h3>";
@@ -49,8 +47,10 @@
 						echo '<td><a href="datosCrud.php?id='.$fila["IdEmpleados"].'&op=borrar&sw=2">Borrar</a></td>';
 						
 					echo"</main>";
-					
+					echo"<footer>";
+						echo"Panel de Administración";
+					echo"</footer>";
 				}
-			?>	
+			?>		
 	</body>
 </html>

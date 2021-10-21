@@ -12,7 +12,7 @@ main
 	margin-bottom:30px;
 	margin-left:9%;
 	width:75%;
-	background-color:#9AEC8E;
+	background-image:url(imagenes/fondo.jpg);
 	
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
@@ -28,18 +28,14 @@ input
 	font-size:medium;
 	size:30;
 }
-form
-{
+form input
+{	
 	font-size:large;
 }
-fieldset
-{
-	padding:10px;
-	border:2px #56E841 solid;
-}
-#centrar
-{
-	text-align:center;
+form label,#solicitar
+{	
+	font-weight:bold;
+	font-size:x-large;
 }
 #solicitar
 {

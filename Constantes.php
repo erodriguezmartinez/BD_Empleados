@@ -3,7 +3,6 @@
 
 <?php 
 	
-
 	define ("SERVER","localhost");
 	define ("USUARIO","root");
 	define ("CONTRASENA","");
